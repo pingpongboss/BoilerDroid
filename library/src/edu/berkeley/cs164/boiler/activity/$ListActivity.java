@@ -6,8 +6,6 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ListView;
-import android.widget.TextView;
 import edu.berkeley.cs164.boiler.$;
 
 public class $ListActivity extends ListActivity implements $able {
@@ -15,19 +13,11 @@ public class $ListActivity extends ListActivity implements $able {
 		return $.from(this, id);
 	}
 
-	public $ $(String klass) {
-		return $.from(this, klass);
+	public $ $(String filter) {
+		return $.from(this, filter);
 	}
 
 	public $ $(View wrapped) {
-		return $.from(this, wrapped);
-	}
-
-	public $ $(TextView wrapped) {
-		return $.from(this, wrapped);
-	}
-
-	public $ $(ListView wrapped) {
 		return $.from(this, wrapped);
 	}
 

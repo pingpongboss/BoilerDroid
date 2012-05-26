@@ -9,7 +9,7 @@ public class TestActivityActivity extends $Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.boiler_activity);
+		setContentView(R.layout.test_activity_activity);
 
 		$(R.id.text1).text(
 				$(this).data("test").toString()

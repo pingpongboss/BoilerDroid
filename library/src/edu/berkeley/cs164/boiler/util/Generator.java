@@ -23,8 +23,7 @@ import com.google.common.collect.AbstractIterator;
  * 
  * @author Abhinav Sarkar
  */
-public abstract class Generator<T> implements Iterable<T>{
-
+public abstract class Generator<T> implements Iterable<T> {
 	private final int generatorNormalExitTimeout;
 
 	private final int generatorAbnormalExitTimeout;

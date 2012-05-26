@@ -3,41 +3,28 @@ package edu.berkeley.cs164.boiler.iter;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import android.app.Activity;
 import android.view.View;
 import android.view.ViewGroup;
+import edu.berkeley.cs164.boiler.util.$Utils;
 import edu.berkeley.cs164.boiler.util.Generator;
 
-public class $LayoutGenerator extends Generator<View> {
-	View root;
-	String klass;
+public class $LayoutGenerator extends Generator<Object> implements
+		$ResettableIterable<Object> {
+	Activity activity;
 
-	public static $GeneratorFactory<View> getFactory(final View root,
-			final String klass) {
-		return new $GeneratorFactory<View>() {
-
-			@Override
-			public Generator<View> createGenerator() {
-				return new $LayoutGenerator(root, klass);
-			}
-
-		};
-	}
-
-	public $LayoutGenerator(View root, String klass) {
-		this.root = root;
-		this.klass = klass;
+	public $LayoutGenerator(Activity activity) {
+		this.activity = activity;
 	}
 
 	@Override
 	protected void run() throws Exception {
 		Queue<View> queue = new LinkedList<View>();
-		queue.add(root);
+		queue.add($Utils.getRootView(activity));
 
 		View view = null;
 		while ((view = queue.poll()) != null) {
-			if (klass.equals(view.getTag())) {
-				yield(view);
-			}
+			yield(view);
 
 			if (view instanceof ViewGroup) {
 				ViewGroup group = (ViewGroup) view;
@@ -46,5 +33,10 @@ public class $LayoutGenerator extends Generator<View> {
 				}
 			}
 		}
+	}
+
+	@Override
+	public $ResettableIterable<Object> reset() {
+		return new $LayoutGenerator(activity);
 	}
 }

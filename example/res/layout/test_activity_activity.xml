@@ -8,7 +8,7 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:tag="text1"
+        android:tag=".text1"
         android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -16,7 +16,7 @@
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:tag="text2"
+        android:tag=".text2"
         android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 

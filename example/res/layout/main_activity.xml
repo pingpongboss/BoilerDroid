@@ -8,13 +8,16 @@
         android:id="@+id/text"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="lorem ipsum blah blah blah asdf lksafdoisafdoisfadoijsdfaoijsdfoi j oij oij osahufsadf" android:tag="status" android:textStyle="normal"/>
+        android:tag=".status"
+        android:text="lorem ipsum blah blah blah asdf lksafdoisafdoisfadoijsdfaoijsdfoi j oij oij osahufsadf"
+        android:textStyle="normal" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" android:tag="status"/>
+        android:tag=".status"
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/status"
@@ -26,31 +29,35 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hide Text" android:tag="button"/>
+        android:tag=".button.status"
+        android:text="Hide Text" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Text" android:tag="button"/>
-        
-     <Button
-         android:id="@+id/button3"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:tag="button"
-         android:text="Test BoilerListView" />
-        
-      <Button
+        android:tag=".button"
+        android:text="Change Text" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag=".button"
+        android:text="Test BoilerListView" />
+
+    <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test BoilerActivity" android:tag="button"/>
+        android:tag=".button"
+        android:text="Test BoilerActivity" />
 
-      <ImageView
-          android:id="@+id/e"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:src="@drawable/e" android:tag="status"/>
+    <ImageView
+        android:id="@+id/e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/e"
+        android:tag=".status" />
 
 </LinearLayout>

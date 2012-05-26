@@ -11,12 +11,15 @@ public class MainActivity extends $Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.main_activity);
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
+
+		$(".status").textStyle("bold");
+
 		$(R.id.button1).click("button1");
 		$(R.id.button2).click("button2");
 		$(R.id.button3).click("button3");
@@ -28,7 +31,7 @@ public class MainActivity extends $Activity {
 
 			@Override
 			public void onClick(View v) {
-				$("button").width("fill");
+				$(".button").width("fill");
 			}
 		});
 	}
@@ -43,22 +46,22 @@ public class MainActivity extends $Activity {
 	}
 
 	public void button1() {
-		$("status").text("clicked b1").textColor(Color.BLUE).hide();
+		$(".status").text("clicked b1").textColor(Color.BLUE).hide();
 	}
 
 	public void button2() {
-		$("status").text("clicked b2").textColor("red").show();
+		$(".status").text("clicked b2").textColor("red").show();
 	}
 
 	public void button3() {
-		$("status").text("Lauch test: BoilerListView").textColor("#ff00ff")
+		$(".status").text("Lauch test: BoilerListView").textColor("#ff00ff")
 				.visible(true);
 		$(TestListActivity.class).start();
 	}
 
 	public void button4() {
-		$("status").text("Launch test: BoilerActivity").textColor(Color.YELLOW)
-				.visible(View.GONE);
+		$(".status").text("Launch test: BoilerActivity")
+				.textColor(Color.YELLOW).visible(View.GONE);
 		String bundleItem2 = "test2";
 		int bundleItem3 = 41;
 

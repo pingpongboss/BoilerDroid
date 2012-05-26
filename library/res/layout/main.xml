@@ -7,6 +7,21 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:tag=".status"
+        android:text="small status" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large status"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:tag=".status.large"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text not status"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:tag=".large"/>
 
 </LinearLayout>

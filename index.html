@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="BoilerDroid : jQuery for Android" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>BoilerDroid</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/pingpongboss/BoilerDroid">View on GitHub</a>
+
+          <h1 id="project_title">BoilerDroid</h1>
+          <h2 id="project_tagline">jQuery for Android</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pingpongboss/BoilerDroid/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pingpongboss/BoilerDroid/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>Overview</h2>
+
+<p>BoilerDroid lets Android developers use jQuery's programming style, providing these main benefits:</p>
+
+<ul>
+<li>Notion of <strong>class and id</strong> for layout Views</li>
+<li>
+<strong>jQuery-like selectors</strong> to work with multiple elements at a time</li>
+<li>Concise <strong>syntax and method chaining</strong>
+</li>
+<li>
+<strong>Boilerplate removal</strong> for various use cases</li>
+</ul><p>Examples:</p>
+
+<pre><code>// Selectors, method chaining, and convenience methods
+$(".status").text("username unavailable").textColor("red").show();
+
+// Switch Activities easily
+$(MyActivity.class).data("auth_token", "xxxxxx").start();
+
+// Lots more
+</code></pre>
+
+<h2>Installation</h2>
+
+<h3>Step 1: Setup the BoilerDroid library</h3>
+
+<p>Download the BoilerDroid repository as a <a href="https://github.com/pingpongboss/BoilerDroid/zipball/master">zip</a>, <a href="https://github.com/pingpongboss/BoilerDroid/tarball/master">tar</a>, or <a href="https://github.com/pingpongboss/BoilerDroid">clone</a>.</p>
+
+<p>Import <code>/library</code> into Eclipse. (<a href="http://stackoverflow.com/a/5450375/450396">?</a>)</p>
+
+<p>Link to BoilerDroid as an Android Library in your own Project. (<a href="http://developer.android.com/guide/developing/projects/projects-eclipse.html#ReferencingLibraryProject">?</a>)</p>
+
+<h3>Step 2: Start using BoilerDroid in your project</h3>
+
+<p>Modify all Activities in your project to extend <code>BoilerActivity</code>.</p>
+
+<p>Use the <code>$( ... )</code> function to start making cool things.</p>
+
+<h2>Documentation</h2>
+
+<p>Coming soon...</p>
+
+<h2>Created By</h2>
+
+<p><a href="https://github.com/pingpongboss" class="user-mention">@pingpongboss</a></p>
+
+<p><a href="https://github.com/jmwong" class="user-mention">@jmwong</a></p>
+
+<p><a href="https://github.com/oldgreg" class="user-mention">@oldgreg</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">BoilerDroid maintained by <a href="https://github.com/pingpongboss">pingpongboss</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-32155030-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>

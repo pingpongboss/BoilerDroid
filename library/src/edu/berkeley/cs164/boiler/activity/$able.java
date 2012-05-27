@@ -9,9 +9,9 @@ public interface $able {
 
 	public $ $(String filter);
 
-	public $ $(View wrapped);
+	public $ $(View wrap);
 
-	public $ $(Activity wrapped);
+	public $ $(Activity wrap);
 
-	public $ $(Class<?> wrapped);
+	public $ $(Class<?> wrap);
 }

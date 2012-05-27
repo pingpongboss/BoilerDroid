@@ -17,16 +17,16 @@ public class BoilerListActivity extends ListActivity implements $able {
 		return $.from(this, filter);
 	}
 
-	public $ $(View wrapped) {
-		return $.from(this, wrapped);
+	public $ $(View wrap) {
+		return $.from(this, wrap);
 	}
 
-	public $ $(Activity wrapped) {
-		return $.from(this, wrapped);
+	public $ $(Activity wrap) {
+		return $.from(this, wrap);
 	}
 
-	public $ $(Class<?> wrapped) {
-		return $.from(this, wrapped);
+	public $ $(Class<?> wrap) {
+		return $.from(this, wrap);
 	}
 
 	@Override

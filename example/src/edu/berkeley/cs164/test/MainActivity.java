@@ -17,7 +17,7 @@ public class MainActivity extends BoilerActivity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-
+		
 		$(".status").textStyle("bold");
 
 		$(R.id.button1).click("button1");

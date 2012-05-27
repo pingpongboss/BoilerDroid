@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import edu.berkeley.cs164.boiler.$;
 
-public class $ListActivity extends ListActivity implements $able {
+public class BoilerListActivity extends ListActivity implements $able {
 	public $ $(int id) {
 		return $.from(this, id);
 	}

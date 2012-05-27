@@ -2,9 +2,9 @@ package edu.berkeley.cs164.test;
 
 import android.os.Bundle;
 import edu.berkeley.cs164.boiler.$;
-import edu.berkeley.cs164.boiler.activity.$Activity;
+import edu.berkeley.cs164.boiler.activity.BoilerActivity;
 
-public class TestActivityActivity extends $Activity {
+public class TestActivityActivity extends BoilerActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

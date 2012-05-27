@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import edu.berkeley.cs164.boiler.activity.$Activity;
+import edu.berkeley.cs164.boiler.activity.BoilerActivity;
 
-public class MainActivity extends $Activity {
+public class MainActivity extends BoilerActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

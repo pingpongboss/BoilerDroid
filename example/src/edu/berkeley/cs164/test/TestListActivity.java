@@ -7,9 +7,9 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.Toast;
-import edu.berkeley.cs164.boiler.activity.$ListActivity;
+import edu.berkeley.cs164.boiler.activity.BoilerListActivity;
 
-public class TestListActivity extends $ListActivity {
+public class TestListActivity extends BoilerListActivity {
 	private Object[] listObjects;
 
 	@Override

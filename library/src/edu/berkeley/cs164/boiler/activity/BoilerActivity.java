@@ -10,7 +10,7 @@ import edu.berkeley.cs164.boiler.$;
 /*
  * $-sign madness!!!
  */
-public class $Activity extends Activity implements $able {
+public class BoilerActivity extends Activity implements $able {
 	public $ $(int id) {
 		return $.from(this, id);
 	}

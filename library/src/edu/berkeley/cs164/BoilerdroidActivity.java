@@ -1,10 +1,10 @@
 package edu.berkeley.cs164;
 
 import android.os.Bundle;
-import edu.berkeley.cs164.boiler.activity.$Activity;
+import edu.berkeley.cs164.boiler.activity.BoilerActivity;
 import edu.berkeley.cs164.boiler.util.$Tag;
 
-public class BoilerdroidActivity extends $Activity {
+public class BoilerdroidActivity extends BoilerActivity {
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
